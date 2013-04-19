@@ -5,29 +5,29 @@ Differences between Python and Lua
 
 Outline:
 
-Introduction
+*Introduction
 
-Introduce dynamic typing and strong typing (what they mean, ex?, etc.)
+-Introduce dynamic typing and strong typing (what they mean, ex?, etc.)
 
-differentiate between strong/weak& dynamic/static (different qualifier sets for kinds of typing)
+-differentiate between strong/weak& dynamic/static (different qualifier sets for kinds of typing)
 
-background on str/weak & sy/stat. : http://en.wikipedia.org/wiki/Type_system#Type_checking
+-background on str/weak & sy/stat. : http://en.wikipedia.org/wiki/Type_system#Type_checking
 
-strong/weak http://en.wikipedia.org/wiki/Strong_and_weak_typing
+-strong/weak http://en.wikipedia.org/wiki/Strong_and_weak_typing
 
 Both Lua and Python are considered strong-typed language
 
 similar in the beginning (both started as scripting languages), evolved differently
 
-Python 
+*Python 
 
-Lua
+*Lua
 
 Only uses coercion between strings and numbers(not nearly as strongly typed as Python)
 
 “string-numeric coercion is not an exception to strong type checking in Lua, it can still be classified as strongly typed” http://the4thwiki.com/lua/types.html
 
-Conclusion?
+*Conclusion?
 
 Finish off with some main similarities and differences that make these languages comparable?
 
