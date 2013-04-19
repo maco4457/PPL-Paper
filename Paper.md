@@ -36,3 +36,43 @@ Any other ideas?
 
 
 
+Python 
+    >>> 1 + 1
+    Output: 2
+    
+    >>> "1" + "1"
+    Output: "11"
+    
+    >>> "1" + 1
+    Output: TypeError: Can't convert 'int' object to str implicitly
+    
+    >>> “Hello” + 1
+    Output: TypeError: Can't convert 'int' object to str implicitly
+Lua
+
+    > = 1 + 1
+    2
+    
+    > = “1” + “1”
+    2
+    
+    > = “1” + 1
+    2
+    
+    > = 1 .. 1
+    11
+    
+    > = “1” .. “1”
+    11
+    
+    >= “1” .. 1
+    11
+    
+    >= "Hello" + 1
+    attempt to perform arithmetic on a string value
+
+
+
+
+
+
