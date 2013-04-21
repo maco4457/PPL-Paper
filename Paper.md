@@ -1,16 +1,20 @@
-Differences in type-checking and definition in Python and Lua 
+The evolution of type-checking and definition in Python and Lua 
 ======
-(Both Strongly-Typed, Dynamic Programming Languages!)
-------
+##How two scripting languages that are dynamically and strongly typed evolved to meet different needs specified by the community 
+
 
 Outline:
 
-####Introduction
->Introduce dynamic typing and strong typing (what they mean, ex?, etc.)
+Introduction
+------------------------
+###dynamic typing and strong typing (what they mean, ex?, etc.)
+
 >differentiate between strong/weak& dynamic/static (different qualifier sets for kinds of typing)
 >background on str/weak & sy/stat. : http://en.wikipedia.org/wiki/Type_system#Type_checking
+
 >strong/weak http://en.wikipedia.org/wiki/Strong_and_weak_typing
->Both Lua and Python are considered strong-typed language
+
+>Both Lua and Python are considered strongly-typed languages
 >similar in the beginning (both started as scripting languages), evolved differently
 
 Python
