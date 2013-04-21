@@ -1,6 +1,6 @@
-Differences between Python and Lua 
+Differences in type-checking and definition in Python and Lua 
 ======
-(Both Strongly-Typed, Dynamic Programming Langauges!)
+(Both Strongly-Typed, Dynamic Programming Languages!)
 ------
 
 Outline:
@@ -13,15 +13,29 @@ Outline:
 >Both Lua and Python are considered strong-typed language
 >similar in the beginning (both started as scripting languages), evolved differently
 
-####Python 
+Python
+-----------------------
 
 
-####Lua
->Only uses coercion between strings and numbers(not nearly as strongly typed as Python)
+Lua
+-----------------------
 
->“string-numeric coercion is not an exception to strong type checking in Lua, it can still be classified as strongly typed” http://the4thwiki.com/lua/types.html
+original design decisions: keep the language simple and small;
+keep the implementation simple, small, fast, portable, and free
 
-####Conclusion?
+Only uses coercion between strings and numbers(not nearly as strongly typed as Python)
+    > “string-numeric coercion is not an exception to strong type checking in Lua, it can still be classified as strongly 
+    > typed” http://the4thwiki.com/lua/types.html
+
+    > "Lua is a dynamically typed language. This means that values have types but variables don't, 
+    > so there are no type or variable declarations. Internally, each value has a tag that identifies its type; 
+    > the tag can be queried at run time with the built-in function type. Variables are typeless and can hold values 
+    > of any type. Lua's garbage collection keeps track of which values are being used, discarding those that are not."
+    > Lua documentation
+
+Conclusion
+-----------------------
+
 >Finish off with some main similarities and differences that make these languages comparable?
 
 Any other ideas?
