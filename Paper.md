@@ -42,7 +42,7 @@ Python comes with two primitive objects, <type 'object'> and <type 'type'>
 
 "These two objects are primitive objects in Python. We might as well have introduced them one at a time but that would lead to the chicken and egg problem - which to introduce first? These two objects are interdependent - they cannot stand on their own since they are defined in terms of each other." 
 
-IMAGE!
+![src of image is cafepy.com](http://www.cafepy.com/article/python_types_and_objects/images/types_map.png)
 
 
 
