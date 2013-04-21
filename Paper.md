@@ -54,7 +54,12 @@ the tag can be queried at run time with the built-in function type. Variables ar
 of any type. Lua's garbage collection keeps track of which values are being used, discarding those that are not."
 Lua documentation
 
-##Lua *only* uses coercion between strings and numbers, and therefore is not nearly as strongly typed as Python.
+Lua *only* uses coercion between strings and numbers, and therefore is not nearly as strongly typed as Python.
+The form of type checking that some consider to best describe both Lua and Python is **duck typing**:
+
+"If it walks, like a duck, talks like a duck..."
+
+A duck-typed language is dynamic and does its type checking at runtime.
 
 In Python, ‘+’ performs arithmetic and also string concatenation.
 
