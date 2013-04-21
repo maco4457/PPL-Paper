@@ -95,9 +95,9 @@ Lua.org
 
 Lua originally borrowed from Sol, a TeX-like description language designed for creating reports, and from Modula, a
 Pascal fork. It was designed as a description language for graphics metafiles, and is most commonly used layered as a C or C++ API today.
-It's especially popular for game programming and other graphical uses. World of Warcraft uses it for interface customization. A Linux utility called Conky
-uses it to display changing information like system data, the weather, and upload/download speeds directly on the desktop. It was even included
-as part of the FLAME/Skypwiper/Wiper malware as scripting support for already compiled C++ modules. 
+It's especially popular for game programming and other graphical uses, ut generally performs best when used as a functional scripting API.
+World of Warcraft uses it for interface customization. A Linux utility called Conky uses it to display changing information like system data, the weather, and upload/download speeds directly on the desktop. It was even included
+as part of the FLAME/Skywiper/Wiper malware as scripting support for already compiled C++ modules. 
 
 It's currently listed as #20 in overall popularity online by the Tiobe index. Though as in Python whole programs can be written in Lua and
 there is support for object-oriented and empirical programming, it's very conducive to a functional scripting style. This is due to elements
