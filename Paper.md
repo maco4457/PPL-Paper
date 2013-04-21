@@ -2,9 +2,6 @@ The evolution of type-checking and definition in Python and Lua
 ======
 ##How two scripting languages that are dynamically and strongly typed evolved to meet different needs specified by the community 
 
-
-Outline:
-
 Introduction
 ------------------------
 ###dynamic typing and strong typing (what they mean, ex?, etc.)
@@ -24,18 +21,30 @@ Python
 Lua
 -----------------------
 
-original design decisions: keep the language simple and small;
-keep the implementation simple, small, fast, portable, and free
+##original design decisions: 
+    keep the language simple and small;
+    keep the implementation simple, small, fast, portable, and free
+    http://www.lua.org/history.html
 
-Only uses coercion between strings and numbers(not nearly as strongly typed as Python)
-    > “string-numeric coercion is not an exception to strong type checking in Lua, it can still be classified as strongly 
-    > typed” http://the4thwiki.com/lua/types.html
+##for our purposes, the language did not need type declarations.
+    Instead, we could use the language itself to write type-checking routines, 
+    provided that the language offered basic reflexive facilities (such as run-time type information)
+    Lua.org
 
-    > "Lua is a dynamically typed language. This means that values have types but variables don't, 
-    > so there are no type or variable declarations. Internally, each value has a tag that identifies its type; 
-    > the tag can be queried at run time with the built-in function type. Variables are typeless and can hold values 
-    > of any type. Lua's garbage collection keeps track of which values are being used, discarding those that are not."
-    > Lua documentation
+##Only uses coercion between strings and numbers(not nearly as strongly typed as Python)
+    “string-numeric coercion is not an exception to strong type checking in Lua, it can still be classified as strongly 
+    typed” http://the4thwiki.com/lua/types.html
+
+    "Lua is a dynamically typed language. This means that values have types but variables don't, 
+    so there are no type or variable declarations. Internally, each value has a tag that identifies its type; 
+    the tag can be queried at run time with the built-in function type. Variables are typeless and can hold values 
+    of any type. Lua's garbage collection keeps track of which values are being used, discarding those that are not."
+    Lua documentation
+    
+##“In a dynamically typed language, every variable name is (unless it is null) bound only to an object.
+    Names are bound to objects at execution time by means of assignment statements, 
+    and it is possible to bind a name to objects of different types during the execution of the program.” 
+    http://the4thwiki.com/lua/types.html
 
 Conclusion
 -----------------------
