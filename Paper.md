@@ -14,7 +14,7 @@ Introduction
 >Both Lua and Python are considered strongly-typed languages
 >similar in the beginning (both started as scripting languages), evolved differently
 
-Python
+*Python*
 -----------------------
 
 ## Types in Python
@@ -46,7 +46,7 @@ IMAGE!
 
 
 
-Lua
+*Lua*
 -----------------------
 
 ##original design decisions: 
@@ -77,16 +77,6 @@ Initially, Lua had seven types:
 type. To keep the language small, we did not [initially] include a boolean type. Like in Lisp, nil represents false, and any other value
 represents true. This is one of the few economies that we sometimes regret today." Lua.org
 
-##table?!
-"A table is a collection of key and data pairs, where the data is referenced by key." Programming in Lua, 2nd ed.
-Tables are the *only* built-in composite data type in Lua, so user-created types generally build upon tables.
-
-Similar to Python's dictionary, PHP's associative array, Scala's map
-
-Constructing a table looks like constructing a dict in Python: 
-sweetNewTable = {} -- Creates a new, empty table
-We pass tables by ref, can insert/delete values and indices (mutability), 
-
 Now, Lua has eight types, but still no integer type!
 The eight primitive types of Lua are now:
 - nil, 
@@ -98,9 +88,19 @@ The eight primitive types of Lua are now:
 - thread, and 
 - (associative) table. 
 
-"Python has many more primitive types, but implicit type conversions sometimes make the variations hidden or irrelevant. 
+"Python has more primitive types, but implicit type conversions make the variations hidden or irrelevant. 
 Consider that while Lua uses (without special build configuration) double-precision floating point for all numbers, 
 Python has four numeric types: int, float, long, and complex. Does Lua need an integer type? Does Python?" the 4th wiki
+
+##table?!
+"A table is a collection of key and data pairs, where the data is referenced by key." Programming in Lua, 2nd ed.
+Tables are the *only* built-in composite data type in Lua, so user-created types generally build upon tables.
+
+Similar to Python's dictionary, PHP's associative array, Scala's map
+
+Constructing a table looks like constructing a dict in Python: 
+sweetNewTable = {} -- Creates a new, empty table
+We pass tables by ref, can insert/delete values and indices (mutability), 
 
 "Lua allows simple arithmetic on numbers using the usual operators to add, subtract, multiply and divide," (Lua Types Tutorial)
 but all 'numbers' are floats.
