@@ -45,8 +45,23 @@ Initially, Lua had seven types:
 - C functions
 
 "After eight years ... the only change in Lua types was the unification of Lua functions and C functions into a single function
-type. To keep the language small, we did not include a boolean type. Like in Lisp, nil represents false, and any other value
+type. To keep the language small, we did not [initially] include a boolean type. Like in Lisp, nil represents false, and any other value
 represents true. This is one of the few economies that we sometimes regret today." Lua.org
+
+Now, Lua has eight types, but still no integer type!
+The eight primitive types of Lua are now:
+- nil, 
+- boolean, 
+- number, 
+- string, 
+- function, 
+- userdata, 
+- thread, and 
+- (associative) table. 
+
+"Python has many more primitive types, but implicit type conversions sometimes make the variations hidden or irrelevant. 
+Consider that while Lua uses (without special build configuration) double-precision floating point for all numbers, 
+Python has four numeric types: int, float, long, and complex. Does Lua need an integer type? Does Python?" the 4th wiki
 
 "Lua is a dynamically typed language. This means that values have types but variables don't, 
 so there are no type or variable declarations. Internally, each value has a tag that identifies its type; 
