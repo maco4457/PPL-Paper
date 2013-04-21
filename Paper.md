@@ -42,12 +42,13 @@ Initially, Lua had seven types:
 - nil (a type with a unique value also called nil),
 - userdata (a generic C pointer to represent C structures inside Lua), 
 - Lua functions, and 
-- C functions. 
+- C functions
+
 "After eight years ... the only change in Lua types was the unification of Lua functions and C functions into a single function
 type. To keep the language small, we did not include a boolean type. Like in Lisp, nil represents false, and any other value
 represents true. This is one of the few economies that we sometimes regret today." Lua.org
 
-##Only uses coercion between strings and numbers(not nearly as strongly typed as Python)
+##Lua *only* uses coercion between strings and numbers, and therefore is not nearly as strongly typed as Python.
 “String-numeric coercion is not an exception to strong type checking in Lua, it can still be classified as strongly 
 typed” http://the4thwiki.com/lua/types.html
 
