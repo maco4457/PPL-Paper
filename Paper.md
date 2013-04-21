@@ -72,10 +72,10 @@ In the _LBYL_ example, it requires the key value to be looked up twice, once to 
 "A try/except block is extremely efficient if no exceptions are raised." (docs.python.org)
 
 
-    Easier to ask for forgiveness than permission. This common Python coding style assumes the existence of valid keys or attributes and catches exceptions if the assumption proves false. This clean and fast style is characterized by the presence of many try and exceptm statements. The technique contrasts with the LBYL style common to many other languages such as C.
+>Easier to ask for forgiveness than permission. This common Python coding style assumes the existence of valid keys or >attributes and catches exceptions if the assumption proves false. This clean and fast style is characterized by the >presence of many try and exceptm statements. The technique contrasts with the LBYL style common to many other >languages such as C.
 
-    Look before you leap. This coding style explicitly tests for pre-conditions before making calls or lookups. This style contrasts with the EAFP approach and is characterized by the presence of many if statements.
-    In a multi-threaded environment, the LBYL approach can risk introducing a race condition between “the looking” and “the leaping”. For example, the code, if key in mapping: return mapping[key] can fail if another thread removes key from mapping after the test, but before the lookup. This issue can be solved with locks or by using the EAFP approach.
+>Look before you leap. This coding style explicitly tests for pre-conditions before making calls or lookups. This style >contrasts with the EAFP approach and is characterized by the presence of many if statements.
+>In a multi-threaded environment, the LBYL approach can risk introducing a race condition between “the looking” and >“the leaping”. For example, the code, if key in mapping: return mapping[key] can fail if another thread removes key >from mapping after the test, but before the lookup. This issue can be solved with locks or by using the EAFP approach.
 
 
 
