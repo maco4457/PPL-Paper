@@ -2,17 +2,70 @@ The evolution of type-checking and definition in Python and Lua
 ======
 ##How two scripting languages that are dynamically and strongly typed evolved to meet different needs specified by the community 
 
-Introduction
+*Introduction*
 ------------------------
-###dynamic typing and strong typing (what they mean, ex?, etc.)
 
->differentiate between strong/weak& dynamic/static (different qualifier sets for kinds of typing)
->background on str/weak & sy/stat. : http://en.wikipedia.org/wiki/Type_system#Type_checking
+A scripting language is a programming language that supports the writing of *scripts*. These *scripts* are programs
+written with the intention of automating the execution of certain tasks. The idea behind this is to remove the need
+for a human operator to perform the execution one-by-one. Because of this characteristic, scripting languages have 
+become an essential tool to the field of Computer Science, as a way to greatly increase the speed and reliability of 
+task execution. 
 
->strong/weak http://en.wikipedia.org/wiki/Strong_and_weak_typing
+Python and Lua two languages that are commonly embedded into applications to provide scripting support. An interesting
+aspect of these languages, however, is that they shared very distinct characteristics to one another when they were
+first introduced. Yet, through the steady evolution of these two languages, which has come mainly due to the
+differing needs of each langauge's user base, Python and Lua have continued to grow and become different from one
+another, while still maintaining basic similarities that they have shared since their inception.
 
->Both Lua and Python are considered strongly-typed languages
->similar in the beginning (both started as scripting languages), evolved differently
+####Type Checking
+
+Perhaps the biggest similarity shared between the Lua and Python languages deals with each language's *type checking* 
+procedures. *Type checking* is the process of verifying and enforcing the constraints of types, and can occur at two
+stages of a program's implementation.
+
+######Static vs. Dynamic Typing
+
+Static typing, which occurs at compile time, allows for errors to be caught early during the implementation phase,
+and verifies that the conditions of type information will hold true for *every* possible execution of a the program.
+This eliminates the need to repeat the type checking procedure every time a program is run, and while this can make 
+program execution more effecient and thus faster, it also means static type checkers are much more convservative. This
+can lead to a static checker that will reject programs that would otherwise execute correctly at run time. 
+
+Both Python and Lua, however, fall into the second category: dynamic typing. Dynamic typing is issued at the run time
+the program. in dynamic type checkers, values are assigned types, but variables are not. In other words, a variable can
+refer to a value of any type. Dynamic typing also improves the support for dynamic programming language features, such
+as generating types and functionality based on actual run time data. Dynamic typing also offers fewer *a priori* 
+guarantees, meaning it will accept and executes programs that would be rejected by static type checkers, due to the
+static checker's nature of being very conservative. 
+
+######Strongly vs. Weakly Typed Languages
+
+Both languages also share what is known as a *strongly typed* system. *Strongly typed* means a programming language will
+prevent the successful execution of an operation on arguments that have differing types. This holds the main advantage 
+over *weakly typed* systems, in which the programming language will implicitly convert, or cast, types when different
+types are present in an operation, which can lead to ambiguity or an incorrect operation being executed. 
+
+    (1) var x := 5;    // 'x' is an integer here, by default
+    (2) var y := "37"; // 'y' is a string here
+    (3) x + y;         // what will this yield?
+
+To answer the question "what will this yield?", we must first look how the language is typed. In a strongly typed 
+language, the program will be prevented from evaluating 'x + y' because the two types, int and string, are not the same.
+However, in a weakly typed language, one of two things could come from evaluating 'x + y':
+- 'y' will be converted from 'string' to 'int': x + y = 5 + 37 = 42
+- 'x' will be converted from 'int' to 'string' and a concatenation will occur: x + y = "5" + "37" = "537"
+
+This characteristic of a weakly typed language can make it very difficult to be positive about whether or not a program
+will generate the correct output, as the user will be unsure of the correctness until after the code has executed during
+run time. However, in the strongly typed systems found in Lua and Python, the code will throw an error during 
+compilation, and the user will be able to address the problem, whether an error or simple abiguity, much earlier than
+he/she would be able to if using a weakly typed system. 
+
+While these two languages had similar beginnings and still share important characteristics with one another, both have
+taken different paths of evolution that allow them to best satisfy the needs of their user bases. In the following 
+sections, we will expand on Python and Lua, and further discuss the subtle differences that allowed these languages, 
+which both started as strongly typed scripting languages, to evolve into the languages they are today.
+
 
 *Python*
 -----------------------
