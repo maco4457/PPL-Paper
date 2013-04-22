@@ -422,4 +422,5 @@ programs and systems right from the beginning, without the need of additional li
 
 It's clear that Python and Lua started off as very similar scripting languages, and still do share similar basic
 characteristics with each other. It can't be said whether or not one of these languages is better, but it's easy to see 
-how each of them has evolved to the different languages they are today.
+how each of them has evolved to the different languages they are today. Whether or not the language is built for power
+or simplicity, they have both been built and rebuilt to satisfy the changing needs of their users. 
