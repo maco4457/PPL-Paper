@@ -398,54 +398,9 @@ can iterate over the contents using the ipairs() function,
 can build new data types on top of tables using key-value referencing.
 
 
-Conclusion
+*Conclusion*
 -----------------------
 
->Finish off with some main similarities and differences that make these languages comparable?
-
-Any other ideas?
-
-
-
-
-Python 
-    
-    >>> 1 + 1
-    Output: 2
-    
-    >>> "1" + "1"
-    Output: "11"
-    
-    >>> "1" + 1
-    Output: TypeError: Can't convert 'int' object to str implicitly
-    
-    >>> “Hello” + 1
-    Output: TypeError: Can't convert 'int' object to str implicitly
-Lua
-
-    > = 1 + 1
-    2
-    
-    > = “1” + “1”
-    2
-    
-    > = “1” + 1
-    2
-    
-    > = 1 .. 1
-    11
-    
-    > = “1” .. “1”
-    11
-    
-    >= “1” .. 1
-    11
-    
-    >= "Hello" + 1
-    attempt to perform arithmetic on a string value
-
-
-
-
-
+Python and Lua, while being very similar in their respective beginnings, have evolved to feed the needs of the 
+communities that these languages support.
 
