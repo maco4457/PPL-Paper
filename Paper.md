@@ -412,3 +412,10 @@ and while this may seem like a hassle in the beginning, this characteristic lead
 of how any Python code will look, increasing its overall readability across different code bases. Finally, Python is 
 extremely user (and more so "beginner") friendly in the available documentation, providing multiple resources, where Lua
 lacks much of the introductory material.
+
+Lua, on the other hand, is known mostly for being an extremely effective language while amazingly being ablt to keep
+its simplicity in tact. Lua packs a punch in under 100kb of space (excluding standard libraries), compared to Pythons 
+824kb for Python's python22.dil package, all while maintaining a minimal amount of memory usage. Lua started as a 
+configuration language, making it an ideal language for game design and implementation. Finally, Lua is well-known for
+its support of multi-threading. This gives it the *huge* advantage of being suitable for embedding into mult-threaded
+programs and systems right from the beginning, without the need of additional libraries or packages.
