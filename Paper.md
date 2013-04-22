@@ -73,7 +73,7 @@ which both started as strongly typed scripting languages, to evolve into the lan
 ## Types in Python
 
 
-One of the core concepts behind python is that "everything is python is an object." (diveintopython.net)  First it is necessary to define how  python defines an object.  In certain langauges, an object must have attributes and methods; however in python, a much looser definition is followed. This allows for objects (in python) to have neither methods nor attributes, or even to not have to capacity to be subclassable.  The primitive data types, such as string  or int , are really just objects themselve. Which means the numbers such as 42 are objects! Furthermore, there is an int object sitting next to the number 42 in memory. In fact, all instances of an integer object have their __class__ attribute pointing to the int object.
+One of the core concepts behind python is that "everything is python is an object." (diveintopython.net)  First it is necessary to define how  python defines an object.  In certain langauges, an object must have attributes and methods; however in python, a much looser definition is followed. This allows for objects (in python) to have neither methods nor attributes, or even to not have to capacity to be subclassable.  The primitive data types, such as string  or int , are really just objects themselves. Which means the numbers such as 42 are objects! Furthermore, there is an int object sitting next to the number 42 in memory. In fact, all instances of an integer object have their __class__ attribute pointing to the int object.
 
 Python comes with two primitive objects, <type 'object'> and <type 'type'>
  
