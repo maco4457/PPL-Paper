@@ -419,3 +419,7 @@ its simplicity in tact. Lua packs a punch in under 100kb of space (excluding sta
 configuration language, making it an ideal language for game design and implementation. Finally, Lua is well-known for
 its support of multi-threading. This gives it the *huge* advantage of being suitable for embedding into mult-threaded
 programs and systems right from the beginning, without the need of additional libraries or packages.
+
+It's clear that Python and Lua started off as very similar scripting languages, and still do share similar basic
+characteristics with each other. It can't be said whether or not one of these languages is better, but it's easy to see 
+how each of them has evolved to the different languages they are today.
