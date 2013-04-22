@@ -404,3 +404,11 @@ can build new data types on top of tables using key-value referencing.
 Python and Lua, while being very similar in their respective beginnings, have evolved to feed the needs of the 
 communities that these languages support.
 
+Python can easily be considered the work horse between the two langauges. Overall, it comes better equipped. An extremely
+large amount of libraries with very useful functionality means Python is exceptional for offline work as well as tool
+scripting. It's ability to perform highly and quickly with numerical computations, as well as built-in binary operators
+(and, or, xor...), makes Python highly advantageous when working with embedded systems. Also, Python is whitespace sensitive,
+and while this may seem like a hassle in the beginning, this characteristic leads to a somewhat universal standardization
+of how any Python code will look, increasing its overall readability across different code bases. Finally, Python is 
+extremely user (and more so "beginner") friendly in the available documentation, providing multiple resources, where Lua
+lacks much of the introductory material.
