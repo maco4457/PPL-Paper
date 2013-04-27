@@ -415,6 +415,23 @@ In Python, ‘+’ performs arithmetic and also string concatenation.
 Lua has a specific string concatenation operator '..'. If we use it on a number, that number becomes a string.
 (Below, we attempt to perform arithmetic on a string value in Lua.)
 
+    > = 100 + "7"
+    107
+    > = "1000" + 234
+    1234
+    > = "hello" + 234
+    stdin:1: attempt to perform arithmetic on a string value
+    stack traceback:
+        stdin:1: in main chunk
+        [C]: ?
+    > = 234 + "1000"
+    1234
+
+"You can see that where a string can be converted to number, the calculation succeeds. 
+The string "hello" cannot be converted to a number and so an error occurs. In statically typed languages (e.g. C) 
+this would cause an error as you cannot assign a value to a variable of an incompatible type. This works in Lua because 
+it is dynamically typed." Lua-users.org wiki
+
     > message = "hello " + who
         stdin:1: attempt to perform arithmetic on a string value
         stack traceback:
@@ -479,8 +496,8 @@ of how any Python code will look, increasing its overall readability across diff
 extremely user (and more so "beginner") friendly in the available documentation, providing multiple resources, where Lua
 lacks much of the introductory material.
 
-Lua, on the other hand, is known mostly for being an extremely effective language while amazingly being ablt to keep
-its simplicity in tact. Lua packs a punch in under 100kb of space (excluding standard libraries), compared to Pythons 
+Lua, on the other hand, is known mostly for being an extremely effective language while amazingly being able to keep
+its simplicity intact. Lua packs a punch in under 100kb of space (excluding standard libraries), compared to Pythons 
 824kb for Python's python22.dil package, all while maintaining a minimal amount of memory usage. Lua started as a 
 configuration language, making it an ideal language for game design and implementation. Finally, Lua is well-known for
 its support of multi-threading. This gives it the *huge* advantage of being suitable for embedding into mult-threaded
