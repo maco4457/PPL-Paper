@@ -190,14 +190,17 @@ or as a kludge of a disctionary and an array, including both key-value pairs and
 are super useful.
 
 Constructing a table looks like constructing a dict in Python: 
-    table = {} -- Creates a new, empty table called, imaginatively enough, **table**
-We pass tables by ref, 
-can insert/delete values and indices (mutability), 
-    table.insert(table, position, value) --append
-    table.remove(table,position)  --delete
+	table = {} -- Creates a new, empty table called, imaginatively enough, **table**
+We pass tables by ref, can insert/delete values and indices (mutability), 
+	table.insert(table, position, value) --append
+	table.remove(table,position)  --delete
 can iterate over the contents using the ipairs() function,
-    > for index,value in ipairs(t) do print(index,value) end
-can build new data types on top of tables using key-value referencing.
+	for index,value in ipairs(t) do
+		print(index,value) 
+	end
+and can build new data types on top of tables using key-value referencing.
+
+##Embedding/extending paradigms? 
 
 "Python has many more primitive types, but implicit type conversions sometimes make the variations hidden or irrelevant. 
 Consider that while Lua uses (without special build configuration) double-precision floating point for all numbers, 
