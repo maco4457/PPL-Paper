@@ -1,4 +1,4 @@
-The evolution of type-checking and definition in Python and Lua 
+Type-checking and definition in Python and Lua 
 ======
 ##How two scripting languages that are dynamically and strongly typed evolved to meet different needs specified by the community 
 
