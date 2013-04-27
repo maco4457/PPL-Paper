@@ -136,20 +136,20 @@ In the _LBYL_ example, it requires the key value to be looked up twice, once to 
 *Lua*
 -----------------------
 
-##About this paper section...
+######About this paper section...
 
 Here we cover the type system in Lua and how it differs from Python, and what that means to a
 programmer who uses either or both. Because Lua follows an embedding philosophy and
 Python extends instead, the development of these languages has gone in very different directions; the
 type systems are one example of a major difference. Not all script-able languages are created alike. 
 
-##Lua design decisions: 
+######Lua design decisions: 
 - Keep the language simple and small.
 - Keep the implementation simple, small, fast, portable, and free.
 
 *http://www.lua.org/history.html*
 
-##Compared to excerpts from the Zen of Python:
+######Compared to excerpts from the Zen of Python:
 - Beautiful is better than ugly.
 - Explicit is better than implicit.
 - Complex is better than complicated.
@@ -165,7 +165,7 @@ Though as in Python whole programs can be written in Lua and there is support fo
 it's very conducive to a functional scripting style. This is due to elements like its general lack of user-specified types, 
 its simplicity, and its lightweight core.
 
-##an overview of types in Lua, in case you're unfamiliar with the language: 
+######an overview of types in Lua, in case you're unfamiliar with the language: 
 Initially, Lua had seven types: 
 - numbers (implemented as floats), 
 - strings, 
@@ -199,7 +199,7 @@ and assign, similarly to Python.
 Consider that while Lua uses (without special build configuration) double-precision floating point for all numbers, 
 Python has four numeric types: int, float, long, and complex." the 4th wiki
 
-##Embedding/extending paradigms? 
+######Embedding/extending paradigms? 
 
 “The Pythonic way is **to extend rather than embed.** Embedding, to Python people, is regarded as something [lesser] to extension. 
 Lua fills the niche which Python avoids here quite neatly..."  xlq, http://lua-users.org/wiki/LuaVersusPython
@@ -217,12 +217,12 @@ re-use as much code as possible from elsewhere which does not confuse and annoy 
 
 *http://www.twistedmatrix.com/users/glyph/rant/extendit.html*
 
-##What is embedding?
+######What is embedding?
 
 Embedding is inserting calls into your (for example, C or C++ application) after it has started up in order to initialize the
 interpreter and call back to script code at specific times. 
 
-##What is extending?
+######What is extending?
 
 Extending is writing a shared library that the interpreter can load. 
 This means that your extension code doesn't need to have a main() 'activating' function, 
@@ -230,7 +230,7 @@ but is instead a set of library functions that Python or Lua scripts can call.
 
 *(Extending and embedding info paraphrased from  http://www.twistedmatrix.com/users/glyph/rant/extendit.html)*
 
-##A brief description of strong typing
+######A brief description of strong typing
 
 “Strong typing is a phrase with no widely agreed upon meaning. Most programmers who use this term to mean something 
 other than static typing imply that **there is a type discipline that is enforced by the compiler[/interpreter].** 
@@ -248,7 +248,7 @@ We'll use "dynamic" or "static" as more a specifier of when exactly that type ch
 "In dynamically typed languages, type checking happens while evaluating the program (statically typed languages are type-checked
 before evaluation)." CSCI 3155 lecture notes
 
-##Lua may be considered: 
+######Lua may be considered: 
 - strongly typed
 - dynamically typed
 - duck typed
@@ -259,7 +259,7 @@ of Javascripty are static, for comparison), and allows fewer implicit conversion
 coercion, which I'll cover later, but in general, the rules of Lua are pretty definite about which types do and do not
 mix and match. We cannot add a Boolean and a thread, for example, or try to concatenate a function and a string.
 
-##Dynamic typing in Lua
+######Dynamic typing in Lua
 
 "Lua is a dynamically typed language: **values have explicit types** but variables don't," (Lua documentation) 
 so, similarly to Python, no type or variable declarations by the programmer are generally necessary for values. 
@@ -352,7 +352,7 @@ A distinct advantage to Python is that this sort of type-checking by hand is gen
 with the language. However, a novice might find it a useful exercise to perform Lua-style type checking if he or she is
 unsure of what will run in Python.
 
-##Why bother with checking types, anyway? Isn't the whole point of this sort of thing to get rid of them?
+######Why bother with checking types, anyway? Isn't the whole point of this sort of thing to get rid of them?
 
 We only really need to check our code during writing and implementation for correct typing, rather than each time we interpret/compile,
 so anything to do with typing can be removed once the code is thoroughly tested, leading to a smaller overall footprint. This is 
@@ -370,7 +370,7 @@ to some of these points however. IMO the only decent way of solving this is stat
 typos have been in less-used codepaths, and even had -w survived, they would have blown up on people at the worst times."
 JayCarlson, http://lua-users.org/wiki/LuaVersusPython
 
-##aside: table?!
+######aside: table?!
 "A table is generally a collection of key and data pairs, where the data is referenced by key." Programming in Lua, 2nd ed. 
 Tables are the only built-in composite data type in Lua, so user-created types generally build upon tables. Though it is similar to Python's dictionary, PHP's associative array, Scala's map, a table can also be used as an array,
 or as a kludge of a dictionary and an array, including both key-value pairs and lone values. I'm going to briefly cover them in case you're unfamiliar.
@@ -403,7 +403,7 @@ perform the addition." Lua.org
 Value metatables can be used to enable or disable coercion between types in order to perform operations on two things 
 that are initially of different types, though the language's default behaviour is mainly what I cover here.
 
-##Duck typing and coercion
+######Duck typing and coercion
 
 Lua, by default, *only* uses coercion between strings and numbers, and therefore is not nearly as strongly typed as Python.
 The form of type checking that some consider to best describe both Lua and Python is **duck typing**:
