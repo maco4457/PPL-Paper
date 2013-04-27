@@ -1,6 +1,6 @@
 Type-checking and definition in Python and Lua 
 ======
-##How two scripting languages that are dynamically and strongly typed evolved to meet different needs specified by the community 
+##How two scripting languages that are dynamically and strongly typed evolved to meet different needs
 
 *Introduction*
 ------------------------
