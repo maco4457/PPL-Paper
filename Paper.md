@@ -189,15 +189,21 @@ Tables are the only built-in composite data type in Lua, so user-created types g
 or as a kludge of a disctionary and an array, including both key-value pairs and lone values. I'm going to briefly cover them in case you're unfamiliar, because tables
 are super useful.
 
-Constructing a table looks like constructing a dict in Python: 
-	table = {} -- Creates a new, empty table called, imaginatively enough, **table**
+Constructing a table looks like constructing a dict in Python:
+
+    table = {} -- Creates a new, empty table called, imaginatively enough, **table**
+    
 We pass tables by ref, can insert/delete values and indices (mutability), 
-	table.insert(table, position, value) --append
-	table.remove(table,position)  --delete
+
+    table.insert(table, position, value) --append
+    table.remove(table,position)  --delete
+    
 can iterate over the contents using the ipairs() function,
-	for index,value in ipairs(t) do
-		print(index,value) 
-	end
+
+    for index,value in ipairs(t) do
+       print(index,value) 
+    end
+    
 and can build new data types on top of tables using key-value referencing.
 
 ##Embedding/extending paradigms? 
