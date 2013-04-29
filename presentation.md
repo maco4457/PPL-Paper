@@ -20,9 +20,26 @@ Travis Pence
 #Definitions#
 
 -Dynamically Typed
-  -def
+  	- def
 -Staticly  Typed
-  -def
+  	- def
+
+#Duck Typing #
+
+"If it walks like a duck, talks like a duck..." A duck-typed language is dynamic and does its type checking at runtime.
+
+_EAFP:_
+
+    try:
+      x = my_dict["key"]
+    except KeyError:
+      # handle missing key
+_LBYL:_
+
+    if "key" in my_dict:
+      x = my_dict["key"]
+    else:
+      # handle missing key
 
 
 #Core Principles#
@@ -39,7 +56,6 @@ Travis Pence
 - Complex is better than complicated.
 - Readability counts.
 
-#Slide 5#
 
 #Slide 6#
 
