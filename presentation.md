@@ -2,6 +2,11 @@
 Matt Comerford, Travis Pence, Kelly Kaoudis
 
 #1. Advantages of Python
+  - "batteries included."
+  - Indentations requirement leads to clean readable code.
+  - Gradual learning curve.
+  - Ducktyping without the downside of ambiguety.
+  - Extension Friendly
 
 #2. Advantages of Lua
 - very, very compact ( & is easy to learn as a consequence), **< 100 KB**
