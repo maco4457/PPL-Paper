@@ -115,7 +115,7 @@ __"explicit is better than implicit."__
     Output = "11"
     
 #18. Manual type checking#
-In Lua, often it is easier to write and call a manual type-checking script from your program than to wait until
+In Lua, often it is more proactive to write and call a manual type-checking script from your program than to wait until
 runtime. This is not necessary in Python.
 
 #19. Conclusion#
