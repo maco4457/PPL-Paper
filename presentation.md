@@ -2,12 +2,11 @@
 Matt Comerford, Travis Pence, Kelly Kaoudis
 
 #1. Advantages of Python
-- Powerful and fast: often described as "batteries included
-- Plays well with others: can integrate with COM, .NET, and COBRA objects
-- User friendly and easy to learn: comes with complete documentation built into the language and online
-- Open: freely usable and distributable, even for commercial use
 
 #2. Advantages of Lua
+- very, very compact ( & is easy to learn as a consequence), **< 100 KB**
+- an "embedding" language (as opposed to an "extension-friendly" language like Python)
+- simplistic, close-to-English syntax
 
 #3. Why we chose to write this paper#
 
