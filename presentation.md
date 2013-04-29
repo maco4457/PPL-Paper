@@ -65,12 +65,7 @@ _LBYL:_
     >= “1” .. 1
     11
 
-#14. Another difference: Lua's metatables#
-Metatables can be associated with a table or other value, and one of their uses is to
-facilitate "operator overloading", defining certain normally disallowed 
-operations like dividing a table by another table
-
-#15. Python doesn't allow coercion of any types (and doesn't have metatables), so is *more* strongly typed.
+#14. Python doesn't have automatic coercion, so is *more* strongly typed.
     >>> 1 + 1
     Output: 2
     >>> "1" + "1"
@@ -79,6 +74,16 @@ operations like dividing a table by another table
     Output: TypeError: Can't convert 'int' object to str implicitly
     >>> “Hello” + 1
     Output: TypeError: Can't convert 'int' object to str implicitly
+  5 
+#14. Lua's metatables#
+Metatables can be associated with a table or other value, and one of their uses is to
+facilitate "operator overloading", defining certain normally disallowed 
+operations like dividing a table by another table
+
+#16. Metatables vs Python's casting#
+Say we have a value j in both Python and Lua.
+In Python, we cast our data element j to the appropriate type instead of 
+setting a value in j's metatable that allows us to perform the operation we want, like division, on j.
     
 #Slide 16#
 
