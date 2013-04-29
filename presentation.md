@@ -101,9 +101,9 @@ Metatables can be associated with a table or other value. One of their uses is "
 operations like dividing a table by another table, or computing the union of two tables.
 
 #17. Metatables vs Python's casting#
-Say we have a value j in both Python and Lua.
-In Python, we cast our data element j to the appropriate type instead of 
-setting a value in j's metatable that allows us to perform the operation we want, like division, on j.
+Say we have a value **j** in both Python and Lua.
+In Python, we cast **j** to the appropriate type instead of 
+setting a value in **j**'s metatable that allows us to perform the operation we want, like division, on **j**.
 
 __"explicit is better than implicit."__  
 
