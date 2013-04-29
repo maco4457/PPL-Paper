@@ -182,11 +182,7 @@ The programmer doesn't declare types. Lua doesn't require the x: String or j: Bo
 "Python has many more primitive types, but implicit type conversions sometimes make the variations hidden or irrelevant. Consider that while Lua uses (without special build configuration) double-precision floating point for all numbers, Python has four numeric types: int, float, long, and complex." the 4th wiki
 
 ######A brief description of strong typing
-“Strong typing is a phrase with no widely agreed upon meaning. Most programmers who use this term to mean something other than static typing imply that there is a type discipline that is enforced by the compiler[/interpreter]. For example, C has a somewhat strong type system, but it can be "subverted" to a degree because a program can always cast a value of one pointer type to a value of another pointer type. So for example, in C you can take a value returned by malloc() and cheerfully cast it to FILE*, and the compiler won't necessarily try to stop you— or even warn you that you are doing anything dodgy.” http://stackoverflow.com/questions/2690544/what-is-the-difference-between-a-strongly-typed-language-and-a-statically-typed
-
-Here I take "strong typing" to mean that implicit conversions/coercions are generally not okay but also that type checking is performed at some point, and is fairly strict.
-
-We'll use "dynamic" or "static" as more a specifier of when exactly that type checking happens.
+Here we take "strong typing" to mean that implicit conversions/coercions are generally not okay but also that type checking is performed at some point, and is fairly strict. We'll use "dynamic" or "static" as more a specifier of when exactly that type checking happens.
 
 "In dynamically typed languages, type checking happens while evaluating the program (statically typed languages are type-checked before evaluation)." CSCI 3155 lecture notes
 
