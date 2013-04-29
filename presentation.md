@@ -4,6 +4,14 @@ Matt Comerford, Travis Pence, Kelly Kaoudis
 #2. Main points#
 
 #3. Language origins#
+Lua:
+- Brazil had strong trade barriers, making it extremely difficult to buy customized software from abroad
+- Created in 1993 by Roberto Lerusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes
+- members of the Computer Graphics Technology Group (Tecgraf) at the Pontifical Catholic University of Rio de Janeiro, Brazil
+
+Python:
+- Implementation of the language was started in 1989 by Guido van Rossum at CWI in the Netherlands
+- Designed as a successor to the ABC language capable of exception handling and interfacing with the Amoeba operating system
 
 #4.Tiobe rank#
 - Python: No. 8
