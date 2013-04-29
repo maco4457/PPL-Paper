@@ -8,25 +8,35 @@ Matt Comerford, Travis Pence, Kelly Kaoudis
 #4.Tiobe rank#
 - Python: No. 8
 - Lua: No. 20
+
+#5. Lua's core design principles (Lua.org): #
+- Keep the language simple and small.
+- Keep the implementation simple, small, fast, portable, and free.
+
+#6. Excerpts from the Zen of Python (PEP 20): #
+- Beautiful is better than ugly.
+- Explicit is better than implicit.
+- Complex is better than complicated.
+- Readability counts.
 	
-#5. Strong typing#
+#7. Strong typing#
 Language prevents successful execution of an operation on arguments that have differing types
 
-#6. Weak typing#
+#8. Weak typing#
 Language allows implicit conversions (casts) on types when different types are present in an operation,
 without necessarily throwing errors
 
-#7. Dynamic type checking#
+#9. Dynamic type checking#
 Types are checked during runtime
 
-#8. Static type checking#
+#10. Static type checking#
 Types are checked at compile/interpretation time
 
-#9. Duck typing#
+#11. Duck typing#
 "If it walks like a duck, talks like a duck..." 
 A duck-typed language is dynamic and does its type checking at runtime.
 
-#10.
+#12.
 
 _EAFP:_
 
@@ -41,16 +51,34 @@ _LBYL:_
     else:
       # handle missing key
 
+#13. String/number coercion in Lua#
+    > = 1 + 1
+    2
+    > = “1” + “1”
+    2
+    > = “1” + 1
+    2
+    > = 1 .. 1
+    11
+    > = “1” .. “1”
+    11
+    >= “1” .. 1
+    11
 
-#11. Lua's core design principles (Lua.org): #
-- Keep the language simple and small.
-- Keep the implementation simple, small, fast, portable, and free.
+#14. Another difference: Lua's metatables#
+Metatables can be associated with a table or other value, and
+facilitate "operator overloading", defining certain normally disallowed 
+operations like dividing a table by another table
 
-#12. Excerpts from the Zen of Python (PEP 20): #
-- Beautiful is better than ugly.
-- Explicit is better than implicit.
-- Complex is better than complicated.
-- Readability counts.
+#15. Python doesn't allow coercion of any types (and doesn't have metatables), so is *more* strongly typed.
+    >>> 1 + 1
+    Output: 2
+    >>> "1" + "1"
+    Output: "11"
+    >>> "1" + 1
+    Output: TypeError: Can't convert 'int' object to str implicitly
+    >>> “Hello” + 1
+    Output: TypeError: Can't convert 'int' object to str implicitly
 
 #Slide 8#
 
