@@ -1,7 +1,5 @@
 #1. Differences in type checking in two dynamic scripting languages#
-Matt Comerford
-Travis Pence
-Kelly Kaoudis
+Matt Comerford, Travis Pence, Kelly Kaoudis
 
 #2. Main points#
 
@@ -11,21 +9,24 @@ Kelly Kaoudis
 - Python: No. 8
 - Lua: No. 20
 	
-#5. Strong vs. weak typing#
-- Strongly typed: language prevents successful execution of an operation on arguments that have differing types
-- Weakly typed: language allows implicit conversions (casts) on types when different types are present in an operation,
+#5. Strong typing#
+Language prevents successful execution of an operation on arguments that have differing types
+
+#6. Weak typing#
+Language allows implicit conversions (casts) on types when different types are present in an operation,
 without necessarily throwing errors
 
+#7. Dynamic type checking#
+Types are checked during runtime
 
-#6. Dynamic vs static#
-- Dynamically typed: types are checked during runtime
-- Statically  typed: types are checked at compile/interpretation time
+#8. Static type checking#
+Types are checked at compile/interpretation time
 
-#7. Duck typing#
+#9. Duck typing#
 "If it walks like a duck, talks like a duck..." 
 A duck-typed language is dynamic and does its type checking at runtime.
 
-#8.
+#10.
 
 _EAFP:_
 
@@ -41,11 +42,11 @@ _LBYL:_
       # handle missing key
 
 
-#9. Lua's core design principles (Lua.org): #
+#11. Lua's core design principles (Lua.org): #
 - Keep the language simple and small.
 - Keep the implementation simple, small, fast, portable, and free.
 
-#10. Excerpts from the Zen of Python (PEP 20): #
+#12. Excerpts from the Zen of Python (PEP 20): #
 - Beautiful is better than ugly.
 - Explicit is better than implicit.
 - Complex is better than complicated.
