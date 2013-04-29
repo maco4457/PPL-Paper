@@ -1,12 +1,3 @@
-Principles of Programing Languages Lightning Talk
-------------------------------------------------
-
-Kelly Kaoudis
-Matt Comerford
-Travis Pence
-
-===============================================
-
 #1. Differences in type checking in two dynamic scripting languages#
 Matt Comerford
 Travis Pence
