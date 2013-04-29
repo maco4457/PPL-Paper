@@ -27,7 +27,7 @@ without necessarily throwing errors
 "If it walks like a duck, talks like a duck..." 
 A duck-typed language is dynamic and does its type checking at runtime.
 
-#5.# 
+#5.
 
 _EAFP:_
 
