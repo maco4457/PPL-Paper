@@ -1,9 +1,9 @@
-Principals of Programing Languages
-
+Principles of Programing Languages Lightning Talk
+------------------------------------------------
 Kelly Kaoudis
 Matt Comerford
 Travis Pence
-
+===============================================
 
 #Introduction#
 
@@ -13,30 +13,30 @@ Travis Pence
 	
 #Definitions#
 - Strongly Typed
-  - a programming language will prevent the successful execution of an operation on arguments that have differing types
+  - language prevents successful execution of an operation on arguments that have differing types
 
 - Weakly Typed
-  - programming language will implicitly convert, or cast, types when different types are present in an operation
+  - language allows implicit conversions (casts) on types when different types are present in an operation,
+without necessarily throwing errors
 
 
 #Definitions#
-
 -Dynamically Typed
-  	- def
--Staticly  Typed
-  	- def
+  	- types are checked during runtime
+-Statically  Typed
+  	- types are checked at compile/interpretation time
 
-#Duck Typing #
+#Duck Typing#
 
 "If it walks like a duck, talks like a duck..." A duck-typed language is dynamic and does its type checking at runtime.
 
-_Easier to Ask for Forgiveness than Permission:_
+_EAFP:_
 
     try:
       x = my_dict["key"]
     except KeyError:
       # handle missing key
-_Look Before You Leap:_
+_LBYL:_
 
     if "key" in my_dict:
       x = my_dict["key"]
