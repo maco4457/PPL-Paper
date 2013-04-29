@@ -7,9 +7,9 @@ Kelly Kaoudis
 
 #3. Language origins#
 
-#4. Rankings by Tiobe#
-Python: No. 8
-Lua: No. 20
+#4.Tiobe rank#
+- Python: No. 8
+- Lua: No. 20
 	
 #5. Strong vs. weak typing#
 - Strongly typed: language prevents successful execution of an operation on arguments that have differing types
