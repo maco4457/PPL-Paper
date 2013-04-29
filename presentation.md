@@ -5,13 +5,15 @@ Matt Comerford, Travis Pence, Kelly Kaoudis
   - "batteries included."
   - Indentations requirement leads to clean readable code.
   - Gradual learning curve.
-  - Ducktyping without the downside of ambiguety.
+  - Ducktyping without the downside of ambiguity.
   - Extension Friendly
 
 #2. Advantages of Lua
-- very, very compact ( & is easy to learn as a consequence), **< 100 KB**
+- very, very compact, **< 100 KB**
+- easy to learn due to its small nature
 - an "embedding" language (as opposed to an "extension-friendly" language like Python)
 - simplistic, close-to-English syntax
+- versatile: string/number coercion, metatables, only one major set-of-objects standard data type (table)
 
 #3. Similarities?#
 
