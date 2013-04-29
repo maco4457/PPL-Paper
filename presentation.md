@@ -106,10 +106,6 @@ __"explicit is better than implicit."__
 In Lua, often it is easier to write and call a manual type-checking script from your program than to wait until
 runtime. This is not necessary in Python.
 
-#Slide 17#
-
-#Slide 18#
-
-#Slide 19#
+#19. Conclusion#
 
 #Any Questions? 
