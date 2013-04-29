@@ -66,7 +66,7 @@ _LBYL:_
     11
 
 #14. Another difference: Lua's metatables#
-Metatables can be associated with a table or other value, and
+Metatables can be associated with a table or other value, and one of their uses is to
 facilitate "operator overloading", defining certain normally disallowed 
 operations like dividing a table by another table
 
@@ -79,23 +79,7 @@ operations like dividing a table by another table
     Output: TypeError: Can't convert 'int' object to str implicitly
     >>> “Hello” + 1
     Output: TypeError: Can't convert 'int' object to str implicitly
-
-#Slide 8#
-
-#Slide 9#
-
-#Slide 10#
-
-#Slide 11#
-
-#Slide 12#
-
-#Slide 13#
-
-#Slide 14#
-
-#Slide 15#
-
+    
 #Slide 16#
 
 #Slide 17#
