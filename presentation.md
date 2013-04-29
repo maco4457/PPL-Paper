@@ -16,7 +16,10 @@ Matt Comerford, Travis Pence, Kelly Kaoudis
 - only one dynamic associative data type, the table
 
 #3. Similarities?#
-
+- Started as scripting languages
+- Dynamic and strongly typed languages
+- Open-source, including commercial use (MIT license)
+- 
 #4. Language origins#
 Lua:
 - Brazil had strong trade barriers, making it extremely difficult to buy customized software from abroad
