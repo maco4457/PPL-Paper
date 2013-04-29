@@ -157,7 +157,7 @@ On the typing spectrum, Lua is less strongly typed than Python, definitely dynam
 Initially, Lua had seven types:
 - numbers (implemented as floats),
 - strings,
-- (associative) tables,
+- (associative, dynamic) tables,
 - nil (a type with a unique value also called nil),
 - userdata (a generic C pointer to represent C structures inside Lua),
 - Lua functions, and
@@ -173,7 +173,7 @@ Now, Lua has eight types (but still no integer type!):
 - function,
 - userdata,
 - thread, and
-- (associative) table.
+- (associative, dynamic) table.
 
 "To keep the language small, we did not [initially] include a boolean type. Like in Lisp, nil represents false, and any other value represents true. This is one of the few economies that we sometimes regret today." Lua.org
 
