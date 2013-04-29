@@ -132,5 +132,9 @@ In Lua, often it is more proactive to write and call a manual type-checking scri
 runtime. This is not necessary in Python.
 
 #19. Conclusion#
+- These languages share some of the basic characteristics (scripting, dynamic and strongly typed)
+- Python is definitely the workhorse of the two languages, where Lua is all about keeping it simple
+- While they may seem quite similar though, there are very key differences in their implementations that make them unique to the communities they serve
+
 
 #Any Questions? 
