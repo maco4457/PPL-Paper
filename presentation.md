@@ -30,13 +30,13 @@ Travis Pence
 
 "If it walks like a duck, talks like a duck..." A duck-typed language is dynamic and does its type checking at runtime.
 
-_EAFP:_
+_Easier to Ask for Forgiveness than Permission:_
 
     try:
       x = my_dict["key"]
     except KeyError:
       # handle missing key
-_LBYL:_
+_Look Before You Leap:_
 
     if "key" in my_dict:
       x = my_dict["key"]
