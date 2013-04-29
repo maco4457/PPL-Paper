@@ -21,8 +21,8 @@ without necessarily throwing errors
 
 
 #Definitions#
--Dynamically Typed: types are checked during runtime
--Statically  Typed: types are checked at compile/interpretation time
+- Dynamically Typed: types are checked during runtime
+- Statically  Typed: types are checked at compile/interpretation time
 
 #Duck Typing#
 "If it walks like a duck, talks like a duck..." A duck-typed language is dynamic and does its type checking at runtime.
