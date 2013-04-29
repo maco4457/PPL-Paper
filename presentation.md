@@ -90,7 +90,9 @@ __"explicit is better than implicit."__
     >>> "1" + str(1)
     Output = "11"
     
-#Slide 16#
+#17. Manual type checking#
+In Lua, often it is easier to write and call a manual type-checking script from your program than to wait until
+runtime. This is not necessary in Python.
 
 #Slide 17#
 
