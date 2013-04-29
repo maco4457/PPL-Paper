@@ -75,7 +75,8 @@ _LBYL:_
     >>> “Hello” + 1
     Output: TypeError: Can't convert 'int' object to str implicitly
 
-__"explicit is better than implicit."__
+__"explicit is better than implicit."__  
+
     >>> "1" + str(1)
     Output = "11"
 
