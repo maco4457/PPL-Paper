@@ -52,7 +52,7 @@ _LBYL:_
 
 *http://www.lua.org/history.html*
 
-######Compared to excerpts from the Zen of Python:
+######Excerpts from the Zen of Python (PEP 20):
 - Beautiful is better than ugly.
 - Explicit is better than implicit.
 - Complex is better than complicated.
