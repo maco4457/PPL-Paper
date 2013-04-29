@@ -7,24 +7,27 @@ Travis Pence
 
 ===============================================
 
-#Introduction#
+#1. Introduction#
 
 - point
   - sub point
 	- sub point
 	
-#Strong vs. weak typing#
+#2. Strong vs. weak typing#
 - Strongly typed: language prevents successful execution of an operation on arguments that have differing types
 - Weakly typed: language allows implicit conversions (casts) on types when different types are present in an operation,
 without necessarily throwing errors
 
 
-#Dynamic vs static#
+#3. Dynamic vs static#
 - Dynamically typed: types are checked during runtime
 - Statically  typed: types are checked at compile/interpretation time
 
-#Duck typing#
-"If it walks like a duck, talks like a duck..." A duck-typed language is dynamic and does its type checking at runtime.
+#4. Duck typing#
+"If it walks like a duck, talks like a duck..." 
+A duck-typed language is dynamic and does its type checking at runtime.
+
+#5.# 
 
 _EAFP:_
 
@@ -40,22 +43,15 @@ _LBYL:_
       # handle missing key
 
 
-#Core Principles#
-
-Lua design decisions (Lua.org): 
+#6. Lua's core design principles (Lua.org): #
 - Keep the language simple and small.
 - Keep the implementation simple, small, fast, portable, and free.
 
-Excerpts from the Zen of Python (PEP 20):
+#7. Excerpts from the Zen of Python (PEP 20): #
 - Beautiful is better than ugly.
 - Explicit is better than implicit.
 - Complex is better than complicated.
 - Readability counts.
-
-
-#Slide 6#
-
-#Slide 7#
 
 #Slide 8#
 
