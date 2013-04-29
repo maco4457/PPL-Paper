@@ -150,7 +150,7 @@ In the _LBYL_ example, it requires the key value to be looked up twice, once to 
 - strongly typed
 - dynamically typed
 - duck typed, by Prof. Chang's definitions in the course notes.
-- 
+
 On the typing spectrum, Lua is less strongly typed than Python, definitely dynamic (most incarnations of Javascripty are static, for comparison), and allows fewer implicit conversions than C. There are a few exceptions to this, such as string/number coercion, which I'll cover later, but in general, the rules of Lua are pretty definite about which types do and do not mix and match. We cannot add a Boolean and a thread, for example, or try to concatenate a function and a string.
 
 ######types in Lua, (in case you're unfamiliar with the language):
