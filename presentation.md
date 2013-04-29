@@ -13,8 +13,10 @@ Travis Pence
 	
 #Definitions#
 - Strongly Typed
+  - a programming language will prevent the successful execution of an operation on arguments that have differing types
 
 - Weakly Typed
+  - programming language will implicitly convert, or cast, types when different types are present in an operation
 
 
 #Definitions#
