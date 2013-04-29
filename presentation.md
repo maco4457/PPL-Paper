@@ -75,6 +75,10 @@ _LBYL:_
     >>> “Hello” + 1
     Output: TypeError: Can't convert 'int' object to str implicitly
 
+__"explicit is better than implicit."__
+    >>> "1" + str(1)
+    Output = "11"
+
 #15. Lua's metatables#
 Metatables can be associated with a table or other value, and one of their uses is to
 facilitate "operator overloading", defining certain normally disallowed 
