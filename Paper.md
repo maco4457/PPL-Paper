@@ -19,7 +19,7 @@ another, while still maintaining basic similarities that they have shared since 
 
 ####Type Checking
 
-Perhaps the biggest similarity shared between the Lua and Python languages deals with each language's *type checking* 
+An important similarity between the Lua and Python languages deals with each language's *type checking* 
 procedures. *Type checking* is the process of verifying and enforcing the constraints of types, and can occur at two
 stages of a program's implementation.
 
