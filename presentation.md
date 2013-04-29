@@ -1,8 +1,10 @@
 Principles of Programing Languages Lightning Talk
 ------------------------------------------------
+
 Kelly Kaoudis
 Matt Comerford
 Travis Pence
+
 ===============================================
 
 #Introduction#
