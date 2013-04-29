@@ -1,9 +1,9 @@
-#1. Differences in type checking in two dynamic scripting languages#
+#0. Differences in type checking in two dynamic scripting languages#
 Matt Comerford, Travis Pence, Kelly Kaoudis
 
-#2. Main points#
+#1. Main points#
 
-#3. Language origins#
+#2. Language origins#
 Lua:
 - Brazil had strong trade barriers, making it extremely difficult to buy customized software from abroad
 - Created in 1993 by Roberto Lerusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes
@@ -13,38 +13,38 @@ Python:
 - Implementation of the language was started in 1989 by Guido van Rossum at CWI in the Netherlands
 - Designed as a successor to the ABC language capable of exception handling and interfacing with the Amoeba operating system
 
-#4.Tiobe rank#
+#3.Tiobe rank#
 - Python: No. 8
 - Lua: No. 20
 
-#5. Lua's core design principles (Lua.org): #
+#4. Lua's core design principles (Lua.org): #
 - Keep the language simple and small.
 - Keep the implementation simple, small, fast, portable, and free.
 
-#6. Excerpts from the Zen of Python (PEP 20): #
+#5. Excerpts from the Zen of Python (PEP 20): #
 - Beautiful is better than ugly.
 - Explicit is better than implicit.
 - Complex is better than complicated.
 - Readability counts.
 	
-#7. Strong typing#
+#6. Strong typing#
 Language prevents successful execution of an operation on arguments that have differing types
 
-#8. Weak typing#
+#7. Weak typing#
 Language allows implicit conversions (casts) on types when different types are present in an operation,
 without necessarily throwing errors
 
-#9. Dynamic type checking#
+#8. Dynamic type checking#
 Types are checked during runtime
 
-#10. Static type checking#
+#9. Static type checking#
 Types are checked at compile/interpretation time
 
-#11. Duck typing#
+#10. Duck typing#
 "If it walks like a duck, talks like a duck..." 
 A duck-typed language is dynamic and does its type checking at runtime.
 
-#12.
+#11.
 
 _EAFP:_
 
@@ -59,7 +59,7 @@ _LBYL:_
     else:
       # handle missing key
 
-#13. String/number coercion in Lua#
+#12. String/number coercion in Lua#
     > = 1 + 1
     2
     > = “1” + “1”
@@ -73,7 +73,7 @@ _LBYL:_
     >= “1” .. 1
     11
 
-#14. Python doesn't have automatic coercion, so is *more* strongly typed.
+#13. Python doesn't have automatic coercion, so is *more* strongly typed.
     >>> 1 + 1
     Output: 2
     >>> "1" + "1"
@@ -83,12 +83,12 @@ _LBYL:_
     >>> “Hello” + 1
     Output: TypeError: Can't convert 'int' object to str implicitly
 
-#15. Lua's metatables#
+#14. Lua's metatables#
 Metatables can be associated with a table or other value. One of their uses is "operator overloading" 
 (via metamethods), defining certain normally disallowed 
 operations like dividing a table by another table, or computing the union of two tables.
 
-#16. Metatables vs Python's casting#
+#15. Metatables vs Python's casting#
 Say we have a value j in both Python and Lua.
 In Python, we cast our data element j to the appropriate type instead of 
 setting a value in j's metatable that allows us to perform the operation we want, like division, on j.
@@ -98,7 +98,7 @@ __"explicit is better than implicit."__
     >>> "1" + str(1)
     Output = "11"
     
-#17. Manual type checking#
+#16. Manual type checking#
 In Lua, often it is easier to write and call a manual type-checking script from your program than to wait until
 runtime. This is not necessary in Python.
 
