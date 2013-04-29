@@ -1,3 +1,5 @@
+https://courses.washington.edu/b572/public/beamer2.pdf 
+
 #0. Differences in type checking in two dynamic scripting languages#
 Matt Comerford, Travis Pence, Kelly Kaoudis
 
