@@ -8,7 +8,7 @@ Matt Comerford, Travis Pence, Kelly Kaoudis
 - an "embedding" language (as opposed to an "extension-friendly" language like Python)
 - simplistic, close-to-English syntax
 
-#3. Why we chose to write this paper#
+#3. Similarities?#
 
 #4. Language origins#
 Lua:
