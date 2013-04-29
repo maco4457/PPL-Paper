@@ -46,10 +46,14 @@ Python:
 	
 #8. Strong typing#
 Language prevents successful execution of an operation on arguments that have differing types
+- Pro: Explicit statements of intent 
+- Con: Limits how "creative" one can be in using a given data type
 
 #9. Weak typing#
 Language allows implicit conversions (casts) on types when different types are present in an operation,
 without necessarily throwing errors
+- Pro: Less verbose, allows for shorter development time
+- Con: Can be more obscure, harder to read
 
 #10. Dynamic type checking#
 Types are checked during runtime
