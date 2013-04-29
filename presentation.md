@@ -5,7 +5,7 @@ Matt Comerford, Travis Pence, Kelly Kaoudis
   - "batteries included."
   - Indentations requirement leads to clean readable code.
   - Gradual learning curve.
-  - Ducktyping without the downside of ambiguety.
+  - Ducktyping without the downside of ambiguity.
   - Extension Friendly
 
 #2. Advantages of Lua
