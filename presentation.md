@@ -1,6 +1,6 @@
 Principals of Programing Languages
 
-Kelly Kaodis
+Kelly Kaoudis
 Matt Comerford
 Travis Pence
 
