@@ -13,16 +13,16 @@ Travis Pence
   - sub point
 	- sub point
 	
-#Definitions#
-- Strongly Typed: language prevents successful execution of an operation on arguments that have differing types
+#Strong vs. weak typing#
+- Strongly typed: language prevents successful execution of an operation on arguments that have differing types
 
-- Weakly Typed: language allows implicit conversions (casts) on types when different types are present in an operation,
+- Weakly typed: language allows implicit conversions (casts) on types when different types are present in an operation,
 without necessarily throwing errors
 
 
-#Definitions#
-- Dynamically Typed: types are checked during runtime
-- Statically  Typed: types are checked at compile/interpretation time
+#Dynamic vs static#
+- Dynamically typed: types are checked during runtime
+- Statically  typed: types are checked at compile/interpretation time
 
 #Duck Typing#
 "If it walks like a duck, talks like a duck..." A duck-typed language is dynamic and does its type checking at runtime.
