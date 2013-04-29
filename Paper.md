@@ -35,7 +35,7 @@ Both Python and Lua, however, fall into the second category: dynamic typing. Dyn
 the program. in dynamic type checkers, values are assigned types, but variables are not. In other words, a variable can
 refer to a value of any type. Dynamic typing also improves the support for dynamic programming language features, such
 as generating types and functionality based on actual run time data. Dynamic typing also offers fewer *a priori* 
-guarantees, meaning it will accept and executes programs that would be rejected by static type checkers, due to the
+guarantees, meaning it will accept and execute a program that would be rejected by static type checkers, due to the
 static checker's nature of being very conservative. 
 
 ######Strongly vs. Weakly Typed Languages
