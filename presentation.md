@@ -5,15 +5,13 @@ Matt Comerford, Travis Pence, Kelly Kaoudis
   - "batteries included."
   - Indentations requirement leads to clean readable code.
   - Gradual learning curve.
-  - Ducktyping without the downside of ambiguity.
+  - Ducktyping without the downside of ambiguety.
   - Extension Friendly
 
 #2. Advantages of Lua
-- very, very compact, **< 100 KB**
-- easy to learn due to its small nature
+- very, very compact ( & is easy to learn as a consequence), **< 100 KB**
 - an "embedding" language (as opposed to an "extension-friendly" language like Python)
 - simplistic, close-to-English syntax
-- versatile: string/number coercion, metatables, only one major set-of-objects standard data type (table)
 
 #3. Similarities?#
 
@@ -50,9 +48,13 @@ without necessarily throwing errors
 
 #10. Dynamic type checking#
 Types are checked during runtime
+- Pro: Save you from writing a few "extra" lines of code
+- Con: If a variable is mispelled, it will not throw an error
 
 #11. Static type checking#
 Types are checked at compile/interpretation time
+- Pro: Catch errors early on in development
+- Con: Have to spend more time writing code
 
 #12. Duck typing#
 "If it walks like a duck, talks like a duck..." 
